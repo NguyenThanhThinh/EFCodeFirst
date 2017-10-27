@@ -95,5 +95,6 @@ namespace EFCodeFirst.Models
                 }
             }
         }
+        public virtual ICollection<Sale> Sales { get; set; }
     }
 }
