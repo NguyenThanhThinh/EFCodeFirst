@@ -1,16 +1,17 @@
 namespace EFCodeFirst.Migrations
 {
-    using EFCodeFirst.Models;
+
+
     using System.Data.Entity.Migrations;
     using System.Linq;
-
+    using EFCodeFirst.Models;
     internal sealed class Configuration : DbMigrationsConfiguration<EFCodeFirst.Data.SalesContext>
     {
         public Configuration()
         {
             AutomaticMigrationsEnabled = false;
-          
         }
+
         protected override void Seed(EFCodeFirst.Data.SalesContext context)
         {
             var banana = new Product("Chuoi", 100, 2.30M);
@@ -23,12 +24,12 @@ namespace EFCodeFirst.Migrations
             var westStore = new StoreLocation("West Store");
             var northStore = new StoreLocation("North Store");
             var southStore = new StoreLocation("South Store");
-            var firstCustomer = new Customer("First","A", "First@First.com");
-            var secondCustomer = new Customer("Second","b", "Second@Second.com");
-            var thirdCustomer = new Customer("Third","c", "Third@Third.com");
-            var fourthCustomer = new Customer("Fourth","d", "Fourth@Fourth.com");
-            var fifthCustomer = new Customer("Fifth","e", "Fifth@Fifth.com");
-            if(context.Products.Count() == 0)
+            var firstCustomer = new Customer("First", "A", "First@First.com");
+            var secondCustomer = new Customer("Second", "b", "Second@Second.com");
+            var thirdCustomer = new Customer("Third", "c", "Third@Third.com");
+            var fourthCustomer = new Customer("Fourth", "d", "Fourth@Fourth.com");
+            var fifthCustomer = new Customer("Fifth", "e", "Fifth@Fifth.com");
+            if (context.Products.Count() == 0)
             {
                 context.Products.AddRange(new[]
                   {

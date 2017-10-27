@@ -3,13 +3,9 @@
     using EFCodeFirst.Helpers;
     using System.Collections.Generic;
     using System.ComponentModel.DataAnnotations;
-    public class Customer
+    public class Customer:BaseEntity
     {
-        private const int NAME_MAX_LENGTH = 50;
-        private const int EMAIL_MAX_LENGTH = 100;
-        private const int CREDIT_CART_NUMBER_EXACT_LENGTH = 16;
-        private const int ADDRESS_MAX_ALLOWED_LENGTH = 255;
-
+       
         private string firstName;
         private string lastName;
         private int? age;
@@ -30,9 +26,6 @@
             this.LastName = lastName;
             this.Email = email;
         }
-
-
-        public int Id { get; set; }
 
         [Required]
         [StringLength(NAME_MAX_LENGTH)]

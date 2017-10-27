@@ -6,7 +6,7 @@ namespace EFCodeFirst.Models
     using EFCodeFirst.Helpers;
     using System.ComponentModel.DataAnnotations;
 
-    public class Sale
+    public class Sale : BaseEntity
     {
         private int productId;
         private int customerId;
@@ -30,7 +30,7 @@ namespace EFCodeFirst.Models
             : this(productId, customerId, storeLocationId, DateTime.Now)
         {
         }
-        public int Id { get; set; }
+
 
         [Required]
         [Display(Name = "Product Id")]

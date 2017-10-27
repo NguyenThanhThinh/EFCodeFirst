@@ -4,9 +4,8 @@
     using System.Collections.Generic;
     using Helpers;
 
-    public class StoreLocation
+    public class StoreLocation : BaseEntity
     {
-        private const int LOCATION_NAME_MAX_LENGTH = 255;
 
         private string locationName;
         private ExceptionMessage ex;
@@ -22,8 +21,6 @@
         {
             this.LocationName = locationName;
         }
-
-        public int Id { get; set; }
 
         [Required]
         [StringLength(LOCATION_NAME_MAX_LENGTH)]

@@ -51,11 +51,12 @@
   <ItemGroup>
     <Compile Include="Data\SalesContext.cs" />
     <Compile Include="Helpers\ExceptionMessage.cs" />
-    <Compile Include="Migrations\201710270409013_init.cs" />
-    <Compile Include="Migrations\201710270409013_init.Designer.cs">
-      <DependentUpon>201710270409013_init.cs</DependentUpon>
+    <Compile Include="Migrations\201710270512150_init.cs" />
+    <Compile Include="Migrations\201710270512150_init.Designer.cs">
+      <DependentUpon>201710270512150_init.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
+    <Compile Include="Models\BaseEntity.cs" />
     <Compile Include="Models\Customer.cs" />
     <Compile Include="Models\Product.cs" />
     <Compile Include="Models\Sale.cs" />
@@ -68,8 +69,8 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Migrations\201710270409013_init.resx">
-      <DependentUpon>201710270409013_init.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\201710270512150_init.resx">
+      <DependentUpon>201710270512150_init.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

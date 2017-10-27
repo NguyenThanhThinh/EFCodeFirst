@@ -4,9 +4,9 @@ namespace EFCodeFirst.Models
     using System.ComponentModel.DataAnnotations;
     using System.Collections.Generic;
     using Helpers;
-    public class Product
+    public class Product:BaseEntity
     {
-        private const int NAME_MAX_LENGTH = 50;
+      
 
         private string name;
         private double quantity;
@@ -26,8 +26,6 @@ namespace EFCodeFirst.Models
             this.Quantity = quantity;
             this.Price = price;
         }
-
-        public int Id { get; set; }
 
         [Required]
         [StringLength(NAME_MAX_LENGTH)]
