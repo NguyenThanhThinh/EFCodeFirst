@@ -2,6 +2,7 @@
 
 namespace EFCodeFirst.Data
 {
+    using EFCodeFirst.Migrations;
     using EFCodeFirst.Models;
     public class SalesContext: DbContext
     {
@@ -9,6 +10,7 @@ namespace EFCodeFirst.Data
            : base("SalesContext")
         {
             this.Configuration.LazyLoadingEnabled = false;
+         
         }
 
         public virtual DbSet<Product> Products { get; set; }

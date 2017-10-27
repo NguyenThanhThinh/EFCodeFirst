@@ -23,12 +23,6 @@
             this.ex = new ExceptionMessage();
             this.Sales = new HashSet<Sale>();
         }
-        public Customer(string name, string email)
-            : this()
-        {
-            this.FirstName = name;
-            this.Email = email;
-        }
         public Customer(string name, string lastName, string email)
             : this()
         {
@@ -36,6 +30,7 @@
             this.LastName = lastName;
             this.Email = email;
         }
+
 
         public int Id { get; set; }
 
