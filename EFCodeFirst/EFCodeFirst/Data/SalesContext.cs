@@ -2,7 +2,6 @@
 
 namespace EFCodeFirst.Data
 {
-    using EFCodeFirst.Migrations;
     using EFCodeFirst.Models;
     public class SalesContext: DbContext
     {

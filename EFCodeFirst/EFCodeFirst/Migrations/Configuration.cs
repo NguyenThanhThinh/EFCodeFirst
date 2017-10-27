@@ -11,7 +11,6 @@ namespace EFCodeFirst.Migrations
             AutomaticMigrationsEnabled = false;
           
         }
-
         protected override void Seed(EFCodeFirst.Data.SalesContext context)
         {
             var banana = new Product("Chuoi", 100, 2.30M);
