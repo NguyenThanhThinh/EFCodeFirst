@@ -1,10 +1,9 @@
 namespace EFCodeFirst.Migrations
 {
-
-
+    using EFCodeFirst.Models;
     using System.Data.Entity.Migrations;
     using System.Linq;
-    using EFCodeFirst.Models;
+
     internal sealed class Configuration : DbMigrationsConfiguration<EFCodeFirst.Data.SalesContext>
     {
         public Configuration()
