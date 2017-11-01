@@ -19,7 +19,7 @@ namespace OnlineRadio.Models
         }
         public int Seconds
         {
-            //C# 7.0
+           
             get => seconds;
             set
             {
